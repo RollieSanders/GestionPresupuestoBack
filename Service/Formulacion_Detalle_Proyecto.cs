@@ -1,0 +1,61 @@
+﻿using System;
+using System.Data;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Service
+{
+    public class Formulacion_Detalle_Proyecto
+    {
+
+        public Boolean Elimina_FormulacionDetalle_Proyecto(int intIdFormulacion_Detalle_Proyecto)
+        {
+
+            Repository.Formulacion_Detalle_Proyecto objDs = new Repository.Formulacion_Detalle_Proyecto();
+
+            return objDs.Elimina_FormulacionDetalle_Proyecto(intIdFormulacion_Detalle_Proyecto);
+
+        }
+
+        public int Graba_FormulacionDetalle_Proyecto(Model.Formulacion_Detalle_Proyecto obj)
+        {
+
+            Repository.Formulacion_Detalle_Proyecto objDs = new Repository.Formulacion_Detalle_Proyecto();
+
+            return objDs.Graba_FormulacionDetalle_Proyecto(obj);
+
+        }
+
+        public int Modifica_FormulacionDetalle_Proyecto(Model.Formulacion_Detalle_Proyecto obj)
+        {
+
+            Repository.Formulacion_Detalle_Proyecto objDs = new Repository.Formulacion_Detalle_Proyecto();
+
+            return objDs.Modifica_FormulacionDetalle_Proyecto(obj);
+
+        }
+
+        public DataSet Lista_FormulacionDetalle_Proyecto(string strCodCompañia,
+                                                         string strCodProyecto,
+                                                         string strCodCentroCosto,
+                                                         string strCodTipoFormulacion
+                                        )
+        {
+            Repository.Formulacion_Detalle_Proyecto objDs = new Repository.Formulacion_Detalle_Proyecto();
+            return objDs.Lista_FormulacionDetalle_Proyecto(strCodCompañia, strCodProyecto, strCodCentroCosto, strCodTipoFormulacion);
+        }
+
+        public DataSet Lista_FormulacionDetalle_Proyecto_Otros(string strCodCompañia,
+                                                         string strCodCentroCosto,
+                                                         string strCodTipoFormulacion
+                                        )
+        {
+            Repository.Formulacion_Detalle_Proyecto objDs = new Repository.Formulacion_Detalle_Proyecto();
+            return objDs.Lista_FormulacionDetalle_Proyecto_Otros(strCodCompañia, strCodCentroCosto, strCodTipoFormulacion);
+        }
+
+
+    }
+}

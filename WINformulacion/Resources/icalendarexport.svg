@@ -1,0 +1,8 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<svg x="0px" y="0px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" id="Layer_1">
+  <g id="iCalendarExport">
+    <path d="M21,12h-1v4h-6v-4H8v4H2v-4H1c-0.5,0-1,0.5-1,1v5h2h18h2v-5C22,12.5,21.5,12,21,12z" fill="#D11C1C" class="Red" />
+    <path d="M22,18v13c0,0.5-0.5,1-1,1H1c-0.5,0-1-0.5-1-1V18h2v12h18V18H22z M6,10H4v4h2V10z M18,10h-2v4h2V10z M9,21v1   h1v6h2v-8h-1L9,21z" fill="#727272" class="Black" />
+    <polygon points="16,4 24,4 24,0 32,6 24,12 24,8 16,8  " fill="#039C23" class="Green" />
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_FormulacionProyecto_Resumen" targetNamespace="http://tempuri.org/Ds_FormulacionProyecto_Resumen.xsd" xmlns:mstns="http://tempuri.org/Ds_FormulacionProyecto_Resumen.xsd" xmlns="http://tempuri.org/Ds_FormulacionProyecto_Resumen.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_FormulacionProyecto_Resumen" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Ds_FormulacionProyecto_Resumen" msprop:Generator_UserDSName="Ds_FormulacionProyecto_Resumen">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Proyecto" msprop:Generator_TableClassName="ProyectoDataTable" msprop:Generator_TableVarName="tableProyecto" msprop:Generator_TablePropName="Proyecto" msprop:Generator_RowDeletingName="ProyectoRowDeleting" msprop:Generator_RowChangingName="ProyectoRowChanging" msprop:Generator_RowEvHandlerName="ProyectoRowChangeEventHandler" msprop:Generator_RowDeletedName="ProyectoRowDeleted" msprop:Generator_UserTableName="Proyecto" msprop:Generator_RowChangedName="ProyectoRowChanged" msprop:Generator_RowEvArgName="ProyectoRowChangeEvent" msprop:Generator_RowClassName="ProyectoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cCodProyecto" msprop:Generator_ColumnVarNameInTable="columncCodProyecto" msprop:Generator_ColumnPropNameInRow="cCodProyecto" msprop:Generator_ColumnPropNameInTable="cCodProyectoColumn" msprop:Generator_UserColumnName="cCodProyecto" type="xs:string" minOccurs="0" />
+              <xs:element name="vNomProyecto" msprop:Generator_ColumnVarNameInTable="columnvNomProyecto" msprop:Generator_ColumnPropNameInRow="vNomProyecto" msprop:Generator_ColumnPropNameInTable="vNomProyectoColumn" msprop:Generator_UserColumnName="vNomProyecto" type="xs:string" minOccurs="0" />
+              <xs:element name="cCodCentroCosto" msprop:Generator_ColumnVarNameInTable="columncCodCentroCosto" msprop:Generator_ColumnPropNameInRow="cCodCentroCosto" msprop:Generator_ColumnPropNameInTable="cCodCentroCostoColumn" msprop:Generator_UserColumnName="cCodCentroCosto" type="xs:string" minOccurs="0" />
+              <xs:element name="vNomCentroCosto" msprop:Generator_ColumnVarNameInTable="columnvNomCentroCosto" msprop:Generator_ColumnPropNameInRow="vNomCentroCosto" msprop:Generator_ColumnPropNameInTable="vNomCentroCostoColumn" msprop:Generator_UserColumnName="vNomCentroCosto" type="xs:string" minOccurs="0" />
+              <xs:element name="cCodClasificador" msprop:Generator_ColumnVarNameInTable="columncCodClasificador" msprop:Generator_ColumnPropNameInRow="cCodClasificador" msprop:Generator_ColumnPropNameInTable="cCodClasificadorColumn" msprop:Generator_UserColumnName="cCodClasificador" type="xs:string" minOccurs="0" />
+              <xs:element name="vNomClasificador" msprop:Generator_ColumnVarNameInTable="columnvNomClasificador" msprop:Generator_ColumnPropNameInRow="vNomClasificador" msprop:Generator_ColumnPropNameInTable="vNomClasificadorColumn" msprop:Generator_UserColumnName="vNomClasificador" type="xs:string" minOccurs="0" />
+              <xs:element name="cCodComponente" msprop:Generator_ColumnVarNameInTable="columncCodComponente" msprop:Generator_ColumnPropNameInRow="cCodComponente" msprop:Generator_ColumnPropNameInTable="cCodComponenteColumn" msprop:Generator_UserColumnName="cCodComponente" type="xs:string" minOccurs="0" />
+              <xs:element name="vNomComponente" msprop:Generator_ColumnVarNameInTable="columnvNomComponente" msprop:Generator_ColumnPropNameInRow="vNomComponente" msprop:Generator_ColumnPropNameInTable="vNomComponenteColumn" msprop:Generator_UserColumnName="vNomComponente" type="xs:string" minOccurs="0" />
+              <xs:element name="cCodFuenteFinanciamiento" msprop:Generator_ColumnVarNameInTable="columncCodFuenteFinanciamiento" msprop:Generator_ColumnPropNameInRow="cCodFuenteFinanciamiento" msprop:Generator_ColumnPropNameInTable="cCodFuenteFinanciamientoColumn" msprop:Generator_UserColumnName="cCodFuenteFinanciamiento" type="xs:string" minOccurs="0" />
+              <xs:element name="vNomFuenteFinanciamiento" msprop:Generator_ColumnVarNameInTable="columnvNomFuenteFinanciamiento" msprop:Generator_ColumnPropNameInRow="vNomFuenteFinanciamiento" msprop:Generator_ColumnPropNameInTable="vNomFuenteFinanciamientoColumn" msprop:Generator_UserColumnName="vNomFuenteFinanciamiento" type="xs:string" minOccurs="0" />
+              <xs:element name="tObjetoContratacion" msprop:Generator_ColumnVarNameInTable="columntObjetoContratacion" msprop:Generator_ColumnPropNameInRow="tObjetoContratacion" msprop:Generator_ColumnPropNameInTable="tObjetoContratacionColumn" msprop:Generator_UserColumnName="tObjetoContratacion" type="xs:string" minOccurs="0" />
+              <xs:element name="fSaldoAnterior" msprop:Generator_ColumnVarNameInTable="columnfSaldoAnterior" msprop:Generator_ColumnPropNameInRow="fSaldoAnterior" msprop:Generator_ColumnPropNameInTable="fSaldoAnteriorColumn" msprop:Generator_UserColumnName="fSaldoAnterior" type="xs:double" minOccurs="0" />
+              <xs:element name="fMes_01" msprop:Generator_ColumnVarNameInTable="columnfMes_01" msprop:Generator_ColumnPropNameInRow="fMes_01" msprop:Generator_ColumnPropNameInTable="fMes_01Column" msprop:Generator_UserColumnName="fMes_01" type="xs:double" minOccurs="0" />
+              <xs:element name="fMes_02" msprop:Generator_ColumnVarNameInTable="columnfMes_02" msprop:Generator_ColumnPropNameInRow="fMes_02" msprop:Generator_ColumnPropNameInTable="fMes_02Column" msprop:Generator_UserColumnName="fMes_02" type="xs:double" minOccurs="0" />
+              <xs:element name="fMes_03" msprop:Generator_ColumnVarNameInTable="columnfMes_03" msprop:Generator_ColumnPropNameInRow="fMes_03" msprop:Generator_ColumnPropNameInTable="fMes_03Column" msprop:Generator_UserColumnName="fMes_03" type="xs:double" minOccurs="0" />
+              <xs:element name="fMes_04" msprop:Generator_ColumnVarNameInTable="columnfMes_04" msprop:Generator_ColumnPropNameInRow="fMes_04" msprop:Generator_ColumnPropNameInTable="fMes_04Column" msprop:Generator_UserColumnName="fMes_04" type="xs:double" minOccurs="0" />
+              <xs:element name="fMes_05" msprop:Generator_ColumnVarNameInTable="columnfMes_05" msprop:Generator_ColumnPropNameInRow="fMes_05" msprop:Generator_ColumnPropNameInTable="fMes_05Column" msprop:Generator_UserColumnName="fMes_05" type="xs:double" minOccurs="0" />
+              <xs:element name="fMes_06" msprop:Generator_ColumnVarNameInTable="columnfMes_06" msprop:Generator_ColumnPropNameInRow="fMes_06" msprop:Generator_ColumnPropNameInTable="fMes_06Column" msprop:Generator_UserColumnName="fMes_06" type="xs:double" minOccurs="0" />
+              <xs:element name="fMes_07" msprop:Generator_ColumnVarNameInTable="columnfMes_07" msprop:Generator_ColumnPropNameInRow="fMes_07" msprop:Generator_ColumnPropNameInTable="fMes_07Column" msprop:Generator_UserColumnName="fMes_07" type="xs:double" minOccurs="0" />
+              <xs:element name="fMes_08" msprop:Generator_ColumnVarNameInTable="columnfMes_08" msprop:Generator_ColumnPropNameInRow="fMes_08" msprop:Generator_ColumnPropNameInTable="fMes_08Column" msprop:Generator_UserColumnName="fMes_08" type="xs:double" minOccurs="0" />
+              <xs:element name="fMes_09" msprop:Generator_ColumnVarNameInTable="columnfMes_09" msprop:Generator_ColumnPropNameInRow="fMes_09" msprop:Generator_ColumnPropNameInTable="fMes_09Column" msprop:Generator_UserColumnName="fMes_09" type="xs:double" minOccurs="0" />
+              <xs:element name="fMes_10" msprop:Generator_ColumnVarNameInTable="columnfMes_10" msprop:Generator_ColumnPropNameInRow="fMes_10" msprop:Generator_ColumnPropNameInTable="fMes_10Column" msprop:Generator_UserColumnName="fMes_10" type="xs:double" minOccurs="0" />
+              <xs:element name="fMes_11" msprop:Generator_ColumnVarNameInTable="columnfMes_11" msprop:Generator_ColumnPropNameInRow="fMes_11" msprop:Generator_ColumnPropNameInTable="fMes_11Column" msprop:Generator_UserColumnName="fMes_11" type="xs:double" minOccurs="0" />
+              <xs:element name="fMes_12" msprop:Generator_ColumnVarNameInTable="columnfMes_12" msprop:Generator_ColumnPropNameInRow="fMes_12" msprop:Generator_ColumnPropNameInTable="fMes_12Column" msprop:Generator_UserColumnName="fMes_12" type="xs:double" minOccurs="0" />
+              <xs:element name="fValorFormulacion" msprop:Generator_ColumnVarNameInTable="columnfValorFormulacion" msprop:Generator_ColumnPropNameInRow="fValorFormulacion" msprop:Generator_ColumnPropNameInTable="fValorFormulacionColumn" msprop:Generator_UserColumnName="fValorFormulacion" type="xs:double" minOccurs="0" />
+              <xs:element name="fSaldoSiguiente_uno" msprop:Generator_ColumnVarNameInTable="columnfSaldoSiguiente_uno" msprop:Generator_ColumnPropNameInRow="fSaldoSiguiente_uno" msprop:Generator_ColumnPropNameInTable="fSaldoSiguiente_unoColumn" msprop:Generator_UserColumnName="fSaldoSiguiente_uno" type="xs:double" minOccurs="0" />
+              <xs:element name="fSaldoSiguiente_Dos" msprop:Generator_ColumnVarNameInTable="columnfSaldoSiguiente_Dos" msprop:Generator_ColumnPropNameInRow="fSaldoSiguiente_Dos" msprop:Generator_ColumnPropNameInTable="fSaldoSiguiente_DosColumn" msprop:Generator_UserColumnName="fSaldoSiguiente_Dos" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

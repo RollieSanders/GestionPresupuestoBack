@@ -1,0 +1,2131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WCFformulacionE" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://aplicacion.amsac.pe/FORMULACION/WCFformulacionE.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://aplicacion.amsac.pe/FORMULACION/WCFformulacionE.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://aplicacion.amsac.pe/FORMULACION/WCFformulacionE.svc?xsd=xsd2" />
+      <xsd:import schemaLocation="http://aplicacion.amsac.pe/FORMULACION/WCFformulacionE.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Model" />
+      <xsd:import schemaLocation="http://aplicacion.amsac.pe/FORMULACION/WCFformulacionE.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Concepto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Concepto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Concepto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_ConceptoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_CentroCosto_Todos_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_CentroCosto_Todos" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_CentroCosto_Todos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_CentroCosto_TodosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_CentroCosto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_CentroCosto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_CentroCosto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_CentroCostoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Ceco_Clasificador_Elegidos_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Ceco_Clasificador_Elegidos" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Ceco_Clasificador_Elegidos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Ceco_Clasificador_ElegidosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Ceco_Clasificador_x_Elegir_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Ceco_Clasificador_x_Elegir" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Ceco_Clasificador_x_Elegir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Ceco_Clasificador_x_ElegirResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_CentroCosto_Clasificador_InputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_CentroCosto_Clasificador" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_CentroCosto_Clasificador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_CentroCosto_ClasificadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Elimina_CentroCosto_Clasificador_InputMessage">
+    <wsdl:part name="parameters" element="tns:Elimina_CentroCosto_Clasificador" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Elimina_CentroCosto_Clasificador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Elimina_CentroCosto_ClasificadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Ceco_Proyecto_Elegidos_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Ceco_Proyecto_Elegidos" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Ceco_Proyecto_Elegidos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Ceco_Proyecto_ElegidosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Ceco_Proyecto_x_Elegir_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Ceco_Proyecto_x_Elegir" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Ceco_Proyecto_x_Elegir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Ceco_Proyecto_x_ElegirResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_CentroCosto_Proyecto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_CentroCosto_Proyecto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_CentroCosto_Proyecto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_CentroCosto_ProyectoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Elimina_CentroCosto_Proyecto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Elimina_CentroCosto_Proyecto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Elimina_CentroCosto_Proyecto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Elimina_CentroCosto_ProyectoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Proyecto_IncorporaSaldoAñoAnterior_OS_Clasificador_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Proyecto_IncorporaSaldoAñoAnterior_OS_Clasificador" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Proyecto_IncorporaSaldoAñoAnterior_OS_Clasificador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Proyecto_IncorporaSaldoAñoAnterior_OS_ClasificadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Proyecto_IncorporaSaldoAñoAnterior_OC_Clasificador_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Proyecto_IncorporaSaldoAñoAnterior_OC_Clasificador" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Proyecto_IncorporaSaldoAñoAnterior_OC_Clasificador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Proyecto_IncorporaSaldoAñoAnterior_OC_ClasificadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Clasificador_Otro_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Clasificador_Otro" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Clasificador_Otro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Clasificador_OtroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Clasificador_Ingreso_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Clasificador_Ingreso" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Clasificador_Ingreso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Clasificador_IngresoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Clasificador_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Clasificador" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Clasificador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_ClasificadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Clasificador_inversion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Clasificador_inversion" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Clasificador_inversion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Clasificador_inversionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Clasificador_tarea_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Clasificador_tarea" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Clasificador_tarea_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Clasificador_tareaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_ClaseIngreso_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_ClaseIngreso" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_ClaseIngreso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_ClaseIngresoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_ClaseIngreso_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_ClaseIngreso" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_ClaseIngreso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_ClaseIngresoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_TipoFormulacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_TipoFormulacion" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_TipoFormulacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_TipoFormulacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_Proyecto_FuenteFinanciamiento_Todos_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_Proyecto_FuenteFinanciamiento_Todos" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_Proyecto_FuenteFinanciamiento_Todos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_Proyecto_FuenteFinanciamiento_TodosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Proyecto_Componente_Todos_Spring_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Proyecto_Componente_Todos_Spring" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Proyecto_Componente_Todos_Spring_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Proyecto_Componente_Todos_SpringResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Proyecto_Componente_Spring_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Proyecto_Componente_Spring" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Proyecto_Componente_Spring_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Proyecto_Componente_SpringResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_Proyecto_FuenteFinanciamiento_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_Proyecto_FuenteFinanciamiento" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_Proyecto_FuenteFinanciamiento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_Proyecto_FuenteFinanciamientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_Tarea_FuenteFinanciamiento_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_Tarea_FuenteFinanciamiento" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_Tarea_FuenteFinanciamiento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_Tarea_FuenteFinanciamientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Proyecto_Spring_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Proyecto_Spring" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Proyecto_Spring_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Proyecto_SpringResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_PlanContable_Spring_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_PlanContable_Spring" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_PlanContable_Spring_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_PlanContable_SpringResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_FuenteFinanciamiento_Reporte_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_FuenteFinanciamiento_Reporte" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_FuenteFinanciamiento_Reporte_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_FuenteFinanciamiento_ReporteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_CentroCosto_Reporte_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_CentroCosto_Reporte" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_CentroCosto_Reporte_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_CentroCosto_ReporteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Proyecto_Reporte_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Proyecto_Reporte" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Proyecto_Reporte_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Proyecto_ReporteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_FuenteFinanciamiento_Reporte_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_FuenteFinanciamiento_Reporte" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_FuenteFinanciamiento_Reporte_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_FuenteFinanciamiento_ReporteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_CentroCosto_Reporte_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_CentroCosto_Reporte" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_CentroCosto_Reporte_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_CentroCosto_ReporteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_Proyecto_Reporte_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_Proyecto_Reporte" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_Proyecto_Reporte_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_Proyecto_ReporteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Proyecto_FuenteFinanciamiento_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Proyecto_FuenteFinanciamiento" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Proyecto_FuenteFinanciamiento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Proyecto_FuenteFinanciamientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_ClaseGasto_Otros_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_ClaseGasto_Otros" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_ClaseGasto_Otros_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_ClaseGasto_OtrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_Proyecto_OrdenTemporal_InputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_Proyecto_OrdenTemporal" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_Proyecto_OrdenTemporal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_Proyecto_OrdenTemporalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Elimina_Proyecto_OrdenTemporal_InputMessage">
+    <wsdl:part name="parameters" element="tns:Elimina_Proyecto_OrdenTemporal" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Elimina_Proyecto_OrdenTemporal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Elimina_Proyecto_OrdenTemporalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Proyecto_CentroCosto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Proyecto_CentroCosto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Proyecto_CentroCosto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Proyecto_CentroCostoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_ClaseGasto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_ClaseGasto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_ClaseGasto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_ClaseGastoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_ClaseGasto_Clasificador_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_ClaseGasto_Clasificador" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_ClaseGasto_Clasificador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_ClaseGasto_ClasificadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_ClaseGasto_Inversion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_ClaseGasto_Inversion" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_ClaseGasto_Inversion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_ClaseGasto_InversionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_ClaseGasto_Tarea_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_ClaseGasto_Tarea" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_ClaseGasto_Tarea_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_ClaseGasto_TareaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_ClaseGasto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_ClaseGasto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_ClaseGasto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_ClaseGastoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_MetodoDistribucion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_MetodoDistribucion" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_MetodoDistribucion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_MetodoDistribucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_MetodoDistribucion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_MetodoDistribucion" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_MetodoDistribucion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_MetodoDistribucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Proyecto_SaldoAñoAnterior_Clasificador_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Proyecto_SaldoAñoAnterior_Clasificador" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Proyecto_SaldoAñoAnterior_Clasificador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Proyecto_SaldoAñoAnterior_ClasificadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Proyecto_SaldoAñoAnterior_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Proyecto_SaldoAñoAnterior" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Proyecto_SaldoAñoAnterior_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Proyecto_SaldoAñoAnteriorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Proyecto_IncorporaSaldoAñoAnterior_OS_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Proyecto_IncorporaSaldoAñoAnterior_OS" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Proyecto_IncorporaSaldoAñoAnterior_OS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Proyecto_IncorporaSaldoAñoAnterior_OSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Proyecto_IncorporaSaldoAñoAnterior_OC_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Proyecto_IncorporaSaldoAñoAnterior_OC" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Proyecto_IncorporaSaldoAñoAnterior_OC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Proyecto_IncorporaSaldoAñoAnterior_OCResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Conformidad_Pago_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Conformidad_Pago" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Conformidad_Pago_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Conformidad_PagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Formato_Conformidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:Formato_Conformidad" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Formato_Conformidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Formato_ConformidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Empleado_Jefatura_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Empleado_Jefatura" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Empleado_Jefatura_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Empleado_JefaturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Recupera_Empleado_Codigo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Recupera_Empleado_Codigo" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Recupera_Empleado_Codigo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Recupera_Empleado_CodigoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Empleado_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Empleado" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Empleado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_EmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Arbol_Empleado_InputMessage">
+    <wsdl:part name="parameters" element="tns:Arbol_Empleado" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Arbol_Empleado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Arbol_EmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_Empleado_CentroCosto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_Empleado_CentroCosto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_Empleado_CentroCosto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_Empleado_CentroCostoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Modifica_Empleado_CentroCosto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Modifica_Empleado_CentroCosto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Modifica_Empleado_CentroCosto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Modifica_Empleado_CentroCostoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Recupera_Empleado_CentroCosto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Recupera_Empleado_CentroCosto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Recupera_Empleado_CentroCosto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Recupera_Empleado_CentroCostoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_Empresa_DataTable_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_Empresa_DataTable" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_Empresa_DataTable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_Empresa_DataTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_AñoProceso_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_AñoProceso" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_AñoProceso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_AñoProcesoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_Version_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_Version" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_Version_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_VersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Recupera_FormulacionCabecera_InputMessage">
+    <wsdl:part name="parameters" element="tns:Recupera_FormulacionCabecera" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Recupera_FormulacionCabecera_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Recupera_FormulacionCabeceraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_FormulacionCabecera_InputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_FormulacionCabecera" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_FormulacionCabecera_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_FormulacionCabeceraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionCabecera_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionCabecera" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionCabecera_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionCabeceraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_elimina_mvto_Formulacion_Cabecera_InputMessage">
+    <wsdl:part name="parameters" element="tns:elimina_mvto_Formulacion_Cabecera" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_elimina_mvto_Formulacion_Cabecera_OutputMessage">
+    <wsdl:part name="parameters" element="tns:elimina_mvto_Formulacion_CabeceraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_FormulacionCabecera_DataSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_FormulacionCabecera_DataSet" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_FormulacionCabecera_DataSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_FormulacionCabecera_DataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Modifica_mvto_Formulacion_Cabecera_InputMessage">
+    <wsdl:part name="parameters" element="tns:Modifica_mvto_Formulacion_Cabecera" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Modifica_mvto_Formulacion_Cabecera_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Modifica_mvto_Formulacion_CabeceraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_mvto_Formulacion_Cabecera_Ceco_InputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_mvto_Formulacion_Cabecera_Ceco" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_mvto_Formulacion_Cabecera_Ceco_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_mvto_Formulacion_Cabecera_CecoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionCabecera_Ceco_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionCabecera_Ceco" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionCabecera_Ceco_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionCabecera_CecoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Recupera_FormulacionCabecera_CeCo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Recupera_FormulacionCabecera_CeCo" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Recupera_FormulacionCabecera_CeCo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Recupera_FormulacionCabecera_CeCoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Formulacion_Aprobacion_Ceco_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Formulacion_Aprobacion_Ceco" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Formulacion_Aprobacion_Ceco_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Formulacion_Aprobacion_CecoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Version_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Version" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Version_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_VersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_FormulacionDetalle_InputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_FormulacionDetalle" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_FormulacionDetalle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_FormulacionDetalleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Elimina_FormulacionDetalle_Personal_InputMessage">
+    <wsdl:part name="parameters" element="tns:Elimina_FormulacionDetalle_Personal" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Elimina_FormulacionDetalle_Personal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Elimina_FormulacionDetalle_PersonalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_FormulacionDetalle_Personal_InputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_FormulacionDetalle_Personal" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_FormulacionDetalle_Personal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_FormulacionDetalle_PersonalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Modifica_FormulacionDetalle_Personal_InputMessage">
+    <wsdl:part name="parameters" element="tns:Modifica_FormulacionDetalle_Personal" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Modifica_FormulacionDetalle_Personal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Modifica_FormulacionDetalle_PersonalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionDetalle_Personal_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionDetalle_Personal" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionDetalle_Personal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionDetalle_PersonalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionReporteProyecto_CentroCosto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionReporteProyecto_CentroCosto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionReporteProyecto_CentroCosto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionReporteProyecto_CentroCostoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionDetalle_Proyecto_Otros_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionDetalle_Proyecto_Otros" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionDetalle_Proyecto_Otros_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionDetalle_Proyecto_OtrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Elimina_FormulacionDetalle_Proyecto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Elimina_FormulacionDetalle_Proyecto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Elimina_FormulacionDetalle_Proyecto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Elimina_FormulacionDetalle_ProyectoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_FormulacionDetalle_Proyecto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_FormulacionDetalle_Proyecto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_FormulacionDetalle_Proyecto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_FormulacionDetalle_ProyectoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Modifica_FormulacionDetalle_Proyecto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Modifica_FormulacionDetalle_Proyecto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Modifica_FormulacionDetalle_Proyecto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Modifica_FormulacionDetalle_ProyectoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionDetalle_Proyecto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionDetalle_Proyecto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionDetalle_Proyecto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionDetalle_ProyectoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Elimina_FormulacionDetalle_Ingreso_InputMessage">
+    <wsdl:part name="parameters" element="tns:Elimina_FormulacionDetalle_Ingreso" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Elimina_FormulacionDetalle_Ingreso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Elimina_FormulacionDetalle_IngresoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_FormulacionDetalle_Ingreso_InputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_FormulacionDetalle_Ingreso" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_FormulacionDetalle_Ingreso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_FormulacionDetalle_IngresoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Modifica_FormulacionDetalle_Ingreso_InputMessage">
+    <wsdl:part name="parameters" element="tns:Modifica_FormulacionDetalle_Ingreso" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Modifica_FormulacionDetalle_Ingreso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Modifica_FormulacionDetalle_IngresoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionDetalle_Ingreso_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionDetalle_Ingreso" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionDetalle_Ingreso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionDetalle_IngresoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Proyecto_FuenteFinanciamiento_Elegidos_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Proyecto_FuenteFinanciamiento_Elegidos" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Proyecto_FuenteFinanciamiento_Elegidos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Proyecto_FuenteFinanciamiento_ElegidosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Proyecto_FuenteFinanciamiento_x_Elegir_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Proyecto_FuenteFinanciamiento_x_Elegir" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Proyecto_FuenteFinanciamiento_x_Elegir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Proyecto_FuenteFinanciamiento_x_ElegirResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_Proyecto_FuenteFinanciamiento_InputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_Proyecto_FuenteFinanciamiento" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Graba_Proyecto_FuenteFinanciamiento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Graba_Proyecto_FuenteFinanciamientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Elimina_Proyecto_FuenteFinanciamiento_InputMessage">
+    <wsdl:part name="parameters" element="tns:Elimina_Proyecto_FuenteFinanciamiento" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Elimina_Proyecto_FuenteFinanciamiento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Elimina_Proyecto_FuenteFinanciamientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_PeriodoProceso_DataTable_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_PeriodoProceso_DataTable" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_PeriodoProceso_DataTable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_PeriodoProceso_DataTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Reporte_Detalle_Formulacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Reporte_Detalle_Formulacion" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Reporte_Detalle_Formulacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Reporte_Detalle_FormulacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Formulacion_HojaTrabajo_Gasto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Formulacion_HojaTrabajo_Gasto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Formulacion_HojaTrabajo_Gasto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Formulacion_HojaTrabajo_GastoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Formulacion_HojaTrabajo_Ingreso_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Formulacion_HojaTrabajo_Ingreso" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Formulacion_HojaTrabajo_Ingreso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Formulacion_HojaTrabajo_IngresoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Formulacion_ResumenClasificador_Gasto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Formulacion_ResumenClasificador_Gasto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Formulacion_ResumenClasificador_Gasto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Formulacion_ResumenClasificador_GastoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Formulacion_ResumenClasificador_Ingreso_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Formulacion_ResumenClasificador_Ingreso" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_Formulacion_ResumenClasificador_Ingreso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_Formulacion_ResumenClasificador_IngresoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Formato_4P_InputMessage">
+    <wsdl:part name="parameters" element="tns:Formato_4P" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Formato_4P_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Formato_4PResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionReporteProyecto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionReporteProyecto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionReporteProyecto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionReporteProyectoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionReporteContrato_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionReporteContrato" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionReporteContrato_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionReporteContratoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Help_FormulacionTipoFormulacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Help_FormulacionTipoFormulacion" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Help_FormulacionTipoFormulacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Help_FormulacionTipoFormulacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionReporteProyecto_Ceco_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionReporteProyecto_Ceco" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionReporteProyecto_Ceco_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionReporteProyecto_CecoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionReporteProyecto_Saldo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionReporteProyecto_Saldo" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Lista_FormulacionReporteProyecto_Saldo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Lista_FormulacionReporteProyecto_SaldoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_TipoDocumento_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_TipoDocumento" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_TipoDocumento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_TipoDocumentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Recupera_Usuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:Recupera_Usuario" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Recupera_Usuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Recupera_UsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Recupera_Usuario_Codigo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Recupera_Usuario_Codigo" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Recupera_Usuario_Codigo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Recupera_Usuario_CodigoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_Usuario_Modulo_DataTable_InputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_Usuario_Modulo_DataTable" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Combo_Usuario_Modulo_DataTable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Combo_Usuario_Modulo_DataTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_OpcionesMenu_Top_InputMessage">
+    <wsdl:part name="parameters" element="tns:OpcionesMenu_Top" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_OpcionesMenu_Top_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OpcionesMenu_TopResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_OpcionesMenu_Lateral_InputMessage">
+    <wsdl:part name="parameters" element="tns:OpcionesMenu_Lateral" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_OpcionesMenu_Lateral_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OpcionesMenu_LateralResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Proyecto_Spring_Help_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Proyecto_Spring_Help" />
+  </wsdl:message>
+  <wsdl:message name="IWCFformulacionE_Ayuda_Proyecto_Spring_Help_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Ayuda_Proyecto_Spring_HelpResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWCFformulacionE">
+    <wsdl:operation name="Ayuda_Concepto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Concepto" message="tns:IWCFformulacionE_Ayuda_Concepto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_ConceptoResponse" message="tns:IWCFformulacionE_Ayuda_Concepto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_CentroCosto_Todos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_CentroCosto_Todos" message="tns:IWCFformulacionE_Ayuda_CentroCosto_Todos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_CentroCosto_TodosResponse" message="tns:IWCFformulacionE_Ayuda_CentroCosto_Todos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_CentroCosto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_CentroCosto" message="tns:IWCFformulacionE_Ayuda_CentroCosto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_CentroCostoResponse" message="tns:IWCFformulacionE_Ayuda_CentroCosto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Ceco_Clasificador_Elegidos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Ceco_Clasificador_Elegidos" message="tns:IWCFformulacionE_Lista_Ceco_Clasificador_Elegidos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Ceco_Clasificador_ElegidosResponse" message="tns:IWCFformulacionE_Lista_Ceco_Clasificador_Elegidos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Ceco_Clasificador_x_Elegir">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Ceco_Clasificador_x_Elegir" message="tns:IWCFformulacionE_Lista_Ceco_Clasificador_x_Elegir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Ceco_Clasificador_x_ElegirResponse" message="tns:IWCFformulacionE_Lista_Ceco_Clasificador_x_Elegir_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Graba_CentroCosto_Clasificador">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_CentroCosto_Clasificador" message="tns:IWCFformulacionE_Graba_CentroCosto_Clasificador_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_CentroCosto_ClasificadorResponse" message="tns:IWCFformulacionE_Graba_CentroCosto_Clasificador_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Elimina_CentroCosto_Clasificador">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Elimina_CentroCosto_Clasificador" message="tns:IWCFformulacionE_Elimina_CentroCosto_Clasificador_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Elimina_CentroCosto_ClasificadorResponse" message="tns:IWCFformulacionE_Elimina_CentroCosto_Clasificador_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Ceco_Proyecto_Elegidos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Ceco_Proyecto_Elegidos" message="tns:IWCFformulacionE_Lista_Ceco_Proyecto_Elegidos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Ceco_Proyecto_ElegidosResponse" message="tns:IWCFformulacionE_Lista_Ceco_Proyecto_Elegidos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Ceco_Proyecto_x_Elegir">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Ceco_Proyecto_x_Elegir" message="tns:IWCFformulacionE_Lista_Ceco_Proyecto_x_Elegir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Ceco_Proyecto_x_ElegirResponse" message="tns:IWCFformulacionE_Lista_Ceco_Proyecto_x_Elegir_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Graba_CentroCosto_Proyecto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_CentroCosto_Proyecto" message="tns:IWCFformulacionE_Graba_CentroCosto_Proyecto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_CentroCosto_ProyectoResponse" message="tns:IWCFformulacionE_Graba_CentroCosto_Proyecto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Elimina_CentroCosto_Proyecto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Elimina_CentroCosto_Proyecto" message="tns:IWCFformulacionE_Elimina_CentroCosto_Proyecto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Elimina_CentroCosto_ProyectoResponse" message="tns:IWCFformulacionE_Elimina_CentroCosto_Proyecto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Proyecto_IncorporaSaldoAñoAnterior_OS_Clasificador">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_IncorporaSaldoAñoAnterior_OS_Clasificador" message="tns:IWCFformulacionE_Lista_Proyecto_IncorporaSaldoAñoAnterior_OS_Clasificador_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_IncorporaSaldoAñoAnterior_OS_ClasificadorResponse" message="tns:IWCFformulacionE_Lista_Proyecto_IncorporaSaldoAñoAnterior_OS_Clasificador_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Proyecto_IncorporaSaldoAñoAnterior_OC_Clasificador">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_IncorporaSaldoAñoAnterior_OC_Clasificador" message="tns:IWCFformulacionE_Lista_Proyecto_IncorporaSaldoAñoAnterior_OC_Clasificador_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_IncorporaSaldoAñoAnterior_OC_ClasificadorResponse" message="tns:IWCFformulacionE_Lista_Proyecto_IncorporaSaldoAñoAnterior_OC_Clasificador_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Clasificador_Otro">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Clasificador_Otro" message="tns:IWCFformulacionE_Ayuda_Clasificador_Otro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Clasificador_OtroResponse" message="tns:IWCFformulacionE_Ayuda_Clasificador_Otro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Clasificador_Ingreso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Clasificador_Ingreso" message="tns:IWCFformulacionE_Ayuda_Clasificador_Ingreso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Clasificador_IngresoResponse" message="tns:IWCFformulacionE_Ayuda_Clasificador_Ingreso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Clasificador">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Clasificador" message="tns:IWCFformulacionE_Ayuda_Clasificador_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_ClasificadorResponse" message="tns:IWCFformulacionE_Ayuda_Clasificador_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Clasificador_inversion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Clasificador_inversion" message="tns:IWCFformulacionE_Ayuda_Clasificador_inversion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Clasificador_inversionResponse" message="tns:IWCFformulacionE_Ayuda_Clasificador_inversion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Clasificador_tarea">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Clasificador_tarea" message="tns:IWCFformulacionE_Ayuda_Clasificador_tarea_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Clasificador_tareaResponse" message="tns:IWCFformulacionE_Ayuda_Clasificador_tarea_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_ClaseIngreso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_ClaseIngreso" message="tns:IWCFformulacionE_Combo_ClaseIngreso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_ClaseIngresoResponse" message="tns:IWCFformulacionE_Combo_ClaseIngreso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_ClaseIngreso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_ClaseIngreso" message="tns:IWCFformulacionE_Ayuda_ClaseIngreso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_ClaseIngresoResponse" message="tns:IWCFformulacionE_Ayuda_ClaseIngreso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_TipoFormulacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_TipoFormulacion" message="tns:IWCFformulacionE_Combo_TipoFormulacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_TipoFormulacionResponse" message="tns:IWCFformulacionE_Combo_TipoFormulacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_Proyecto_FuenteFinanciamiento_Todos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_Proyecto_FuenteFinanciamiento_Todos" message="tns:IWCFformulacionE_Combo_Proyecto_FuenteFinanciamiento_Todos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_Proyecto_FuenteFinanciamiento_TodosResponse" message="tns:IWCFformulacionE_Combo_Proyecto_FuenteFinanciamiento_Todos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Proyecto_Componente_Todos_Spring">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_Componente_Todos_Spring" message="tns:IWCFformulacionE_Ayuda_Proyecto_Componente_Todos_Spring_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_Componente_Todos_SpringResponse" message="tns:IWCFformulacionE_Ayuda_Proyecto_Componente_Todos_Spring_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Proyecto_Componente_Spring">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_Componente_Spring" message="tns:IWCFformulacionE_Ayuda_Proyecto_Componente_Spring_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_Componente_SpringResponse" message="tns:IWCFformulacionE_Ayuda_Proyecto_Componente_Spring_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_Proyecto_FuenteFinanciamiento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_Proyecto_FuenteFinanciamiento" message="tns:IWCFformulacionE_Combo_Proyecto_FuenteFinanciamiento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_Proyecto_FuenteFinanciamientoResponse" message="tns:IWCFformulacionE_Combo_Proyecto_FuenteFinanciamiento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_Tarea_FuenteFinanciamiento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_Tarea_FuenteFinanciamiento" message="tns:IWCFformulacionE_Combo_Tarea_FuenteFinanciamiento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_Tarea_FuenteFinanciamientoResponse" message="tns:IWCFformulacionE_Combo_Tarea_FuenteFinanciamiento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Proyecto_Spring">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_Spring" message="tns:IWCFformulacionE_Ayuda_Proyecto_Spring_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_SpringResponse" message="tns:IWCFformulacionE_Ayuda_Proyecto_Spring_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_PlanContable_Spring">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_PlanContable_Spring" message="tns:IWCFformulacionE_Ayuda_PlanContable_Spring_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_PlanContable_SpringResponse" message="tns:IWCFformulacionE_Ayuda_PlanContable_Spring_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_FuenteFinanciamiento_Reporte">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_FuenteFinanciamiento_Reporte" message="tns:IWCFformulacionE_Ayuda_FuenteFinanciamiento_Reporte_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_FuenteFinanciamiento_ReporteResponse" message="tns:IWCFformulacionE_Ayuda_FuenteFinanciamiento_Reporte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_CentroCosto_Reporte">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_CentroCosto_Reporte" message="tns:IWCFformulacionE_Ayuda_CentroCosto_Reporte_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_CentroCosto_ReporteResponse" message="tns:IWCFformulacionE_Ayuda_CentroCosto_Reporte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Proyecto_Reporte">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_Reporte" message="tns:IWCFformulacionE_Ayuda_Proyecto_Reporte_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_ReporteResponse" message="tns:IWCFformulacionE_Ayuda_Proyecto_Reporte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_FuenteFinanciamiento_Reporte">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_FuenteFinanciamiento_Reporte" message="tns:IWCFformulacionE_Combo_FuenteFinanciamiento_Reporte_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_FuenteFinanciamiento_ReporteResponse" message="tns:IWCFformulacionE_Combo_FuenteFinanciamiento_Reporte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_CentroCosto_Reporte">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_CentroCosto_Reporte" message="tns:IWCFformulacionE_Combo_CentroCosto_Reporte_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_CentroCosto_ReporteResponse" message="tns:IWCFformulacionE_Combo_CentroCosto_Reporte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_Proyecto_Reporte">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_Proyecto_Reporte" message="tns:IWCFformulacionE_Combo_Proyecto_Reporte_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_Proyecto_ReporteResponse" message="tns:IWCFformulacionE_Combo_Proyecto_Reporte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Proyecto_FuenteFinanciamiento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_FuenteFinanciamiento" message="tns:IWCFformulacionE_Ayuda_Proyecto_FuenteFinanciamiento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_FuenteFinanciamientoResponse" message="tns:IWCFformulacionE_Ayuda_Proyecto_FuenteFinanciamiento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_ClaseGasto_Otros">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_ClaseGasto_Otros" message="tns:IWCFformulacionE_Combo_ClaseGasto_Otros_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_ClaseGasto_OtrosResponse" message="tns:IWCFformulacionE_Combo_ClaseGasto_Otros_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Graba_Proyecto_OrdenTemporal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_Proyecto_OrdenTemporal" message="tns:IWCFformulacionE_Graba_Proyecto_OrdenTemporal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_Proyecto_OrdenTemporalResponse" message="tns:IWCFformulacionE_Graba_Proyecto_OrdenTemporal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Elimina_Proyecto_OrdenTemporal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Elimina_Proyecto_OrdenTemporal" message="tns:IWCFformulacionE_Elimina_Proyecto_OrdenTemporal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Elimina_Proyecto_OrdenTemporalResponse" message="tns:IWCFformulacionE_Elimina_Proyecto_OrdenTemporal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Proyecto_CentroCosto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_CentroCosto" message="tns:IWCFformulacionE_Ayuda_Proyecto_CentroCosto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_CentroCostoResponse" message="tns:IWCFformulacionE_Ayuda_Proyecto_CentroCosto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_ClaseGasto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_ClaseGasto" message="tns:IWCFformulacionE_Combo_ClaseGasto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_ClaseGastoResponse" message="tns:IWCFformulacionE_Combo_ClaseGasto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_ClaseGasto_Clasificador">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_ClaseGasto_Clasificador" message="tns:IWCFformulacionE_Combo_ClaseGasto_Clasificador_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_ClaseGasto_ClasificadorResponse" message="tns:IWCFformulacionE_Combo_ClaseGasto_Clasificador_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_ClaseGasto_Inversion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_ClaseGasto_Inversion" message="tns:IWCFformulacionE_Combo_ClaseGasto_Inversion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_ClaseGasto_InversionResponse" message="tns:IWCFformulacionE_Combo_ClaseGasto_Inversion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_ClaseGasto_Tarea">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_ClaseGasto_Tarea" message="tns:IWCFformulacionE_Combo_ClaseGasto_Tarea_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_ClaseGasto_TareaResponse" message="tns:IWCFformulacionE_Combo_ClaseGasto_Tarea_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_ClaseGasto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_ClaseGasto" message="tns:IWCFformulacionE_Ayuda_ClaseGasto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_ClaseGastoResponse" message="tns:IWCFformulacionE_Ayuda_ClaseGasto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_MetodoDistribucion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_MetodoDistribucion" message="tns:IWCFformulacionE_Combo_MetodoDistribucion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_MetodoDistribucionResponse" message="tns:IWCFformulacionE_Combo_MetodoDistribucion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_MetodoDistribucion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_MetodoDistribucion" message="tns:IWCFformulacionE_Ayuda_MetodoDistribucion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_MetodoDistribucionResponse" message="tns:IWCFformulacionE_Ayuda_MetodoDistribucion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Proyecto_SaldoAñoAnterior_Clasificador">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_SaldoAñoAnterior_Clasificador" message="tns:IWCFformulacionE_Lista_Proyecto_SaldoAñoAnterior_Clasificador_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_SaldoAñoAnterior_ClasificadorResponse" message="tns:IWCFformulacionE_Lista_Proyecto_SaldoAñoAnterior_Clasificador_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Proyecto_SaldoAñoAnterior">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_SaldoAñoAnterior" message="tns:IWCFformulacionE_Lista_Proyecto_SaldoAñoAnterior_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_SaldoAñoAnteriorResponse" message="tns:IWCFformulacionE_Lista_Proyecto_SaldoAñoAnterior_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Proyecto_IncorporaSaldoAñoAnterior_OS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_IncorporaSaldoAñoAnterior_OS" message="tns:IWCFformulacionE_Lista_Proyecto_IncorporaSaldoAñoAnterior_OS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_IncorporaSaldoAñoAnterior_OSResponse" message="tns:IWCFformulacionE_Lista_Proyecto_IncorporaSaldoAñoAnterior_OS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Proyecto_IncorporaSaldoAñoAnterior_OC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_IncorporaSaldoAñoAnterior_OC" message="tns:IWCFformulacionE_Lista_Proyecto_IncorporaSaldoAñoAnterior_OC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_IncorporaSaldoAñoAnterior_OCResponse" message="tns:IWCFformulacionE_Lista_Proyecto_IncorporaSaldoAñoAnterior_OC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Conformidad_Pago">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Conformidad_Pago" message="tns:IWCFformulacionE_Lista_Conformidad_Pago_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Conformidad_PagoResponse" message="tns:IWCFformulacionE_Lista_Conformidad_Pago_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Formato_Conformidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Formato_Conformidad" message="tns:IWCFformulacionE_Formato_Conformidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Formato_ConformidadResponse" message="tns:IWCFformulacionE_Formato_Conformidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Empleado_Jefatura">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Empleado_Jefatura" message="tns:IWCFformulacionE_Ayuda_Empleado_Jefatura_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Empleado_JefaturaResponse" message="tns:IWCFformulacionE_Ayuda_Empleado_Jefatura_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Recupera_Empleado_Codigo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Recupera_Empleado_Codigo" message="tns:IWCFformulacionE_Recupera_Empleado_Codigo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Recupera_Empleado_CodigoResponse" message="tns:IWCFformulacionE_Recupera_Empleado_Codigo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Empleado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Empleado" message="tns:IWCFformulacionE_Ayuda_Empleado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_EmpleadoResponse" message="tns:IWCFformulacionE_Ayuda_Empleado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Arbol_Empleado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Arbol_Empleado" message="tns:IWCFformulacionE_Arbol_Empleado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Arbol_EmpleadoResponse" message="tns:IWCFformulacionE_Arbol_Empleado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Graba_Empleado_CentroCosto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_Empleado_CentroCosto" message="tns:IWCFformulacionE_Graba_Empleado_CentroCosto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_Empleado_CentroCostoResponse" message="tns:IWCFformulacionE_Graba_Empleado_CentroCosto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Modifica_Empleado_CentroCosto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Modifica_Empleado_CentroCosto" message="tns:IWCFformulacionE_Modifica_Empleado_CentroCosto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Modifica_Empleado_CentroCostoResponse" message="tns:IWCFformulacionE_Modifica_Empleado_CentroCosto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Recupera_Empleado_CentroCosto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Recupera_Empleado_CentroCosto" message="tns:IWCFformulacionE_Recupera_Empleado_CentroCosto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Recupera_Empleado_CentroCostoResponse" message="tns:IWCFformulacionE_Recupera_Empleado_CentroCosto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_Empresa_DataTable">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_Empresa_DataTable" message="tns:IWCFformulacionE_Combo_Empresa_DataTable_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_Empresa_DataTableResponse" message="tns:IWCFformulacionE_Combo_Empresa_DataTable_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_AñoProceso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_AñoProceso" message="tns:IWCFformulacionE_Combo_AñoProceso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_AñoProcesoResponse" message="tns:IWCFformulacionE_Combo_AñoProceso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_Version">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_Version" message="tns:IWCFformulacionE_Combo_Version_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_VersionResponse" message="tns:IWCFformulacionE_Combo_Version_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Recupera_FormulacionCabecera">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Recupera_FormulacionCabecera" message="tns:IWCFformulacionE_Recupera_FormulacionCabecera_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Recupera_FormulacionCabeceraResponse" message="tns:IWCFformulacionE_Recupera_FormulacionCabecera_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Graba_FormulacionCabecera">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_FormulacionCabecera" message="tns:IWCFformulacionE_Graba_FormulacionCabecera_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_FormulacionCabeceraResponse" message="tns:IWCFformulacionE_Graba_FormulacionCabecera_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionCabecera">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionCabecera" message="tns:IWCFformulacionE_Lista_FormulacionCabecera_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionCabeceraResponse" message="tns:IWCFformulacionE_Lista_FormulacionCabecera_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="elimina_mvto_Formulacion_Cabecera">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/elimina_mvto_Formulacion_Cabecera" message="tns:IWCFformulacionE_elimina_mvto_Formulacion_Cabecera_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/elimina_mvto_Formulacion_CabeceraResponse" message="tns:IWCFformulacionE_elimina_mvto_Formulacion_Cabecera_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Graba_FormulacionCabecera_DataSet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_FormulacionCabecera_DataSet" message="tns:IWCFformulacionE_Graba_FormulacionCabecera_DataSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_FormulacionCabecera_DataSetResponse" message="tns:IWCFformulacionE_Graba_FormulacionCabecera_DataSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Modifica_mvto_Formulacion_Cabecera">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Modifica_mvto_Formulacion_Cabecera" message="tns:IWCFformulacionE_Modifica_mvto_Formulacion_Cabecera_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Modifica_mvto_Formulacion_CabeceraResponse" message="tns:IWCFformulacionE_Modifica_mvto_Formulacion_Cabecera_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Graba_mvto_Formulacion_Cabecera_Ceco">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_mvto_Formulacion_Cabecera_Ceco" message="tns:IWCFformulacionE_Graba_mvto_Formulacion_Cabecera_Ceco_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_mvto_Formulacion_Cabecera_CecoResponse" message="tns:IWCFformulacionE_Graba_mvto_Formulacion_Cabecera_Ceco_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionCabecera_Ceco">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionCabecera_Ceco" message="tns:IWCFformulacionE_Lista_FormulacionCabecera_Ceco_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionCabecera_CecoResponse" message="tns:IWCFformulacionE_Lista_FormulacionCabecera_Ceco_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Recupera_FormulacionCabecera_CeCo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Recupera_FormulacionCabecera_CeCo" message="tns:IWCFformulacionE_Recupera_FormulacionCabecera_CeCo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Recupera_FormulacionCabecera_CeCoResponse" message="tns:IWCFformulacionE_Recupera_FormulacionCabecera_CeCo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Formulacion_Aprobacion_Ceco">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Formulacion_Aprobacion_Ceco" message="tns:IWCFformulacionE_Lista_Formulacion_Aprobacion_Ceco_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Formulacion_Aprobacion_CecoResponse" message="tns:IWCFformulacionE_Lista_Formulacion_Aprobacion_Ceco_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Version">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Version" message="tns:IWCFformulacionE_Lista_Version_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_VersionResponse" message="tns:IWCFformulacionE_Lista_Version_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Graba_FormulacionDetalle">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_FormulacionDetalle" message="tns:IWCFformulacionE_Graba_FormulacionDetalle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_FormulacionDetalleResponse" message="tns:IWCFformulacionE_Graba_FormulacionDetalle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Elimina_FormulacionDetalle_Personal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Elimina_FormulacionDetalle_Personal" message="tns:IWCFformulacionE_Elimina_FormulacionDetalle_Personal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Elimina_FormulacionDetalle_PersonalResponse" message="tns:IWCFformulacionE_Elimina_FormulacionDetalle_Personal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Graba_FormulacionDetalle_Personal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_FormulacionDetalle_Personal" message="tns:IWCFformulacionE_Graba_FormulacionDetalle_Personal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_FormulacionDetalle_PersonalResponse" message="tns:IWCFformulacionE_Graba_FormulacionDetalle_Personal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Modifica_FormulacionDetalle_Personal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Modifica_FormulacionDetalle_Personal" message="tns:IWCFformulacionE_Modifica_FormulacionDetalle_Personal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Modifica_FormulacionDetalle_PersonalResponse" message="tns:IWCFformulacionE_Modifica_FormulacionDetalle_Personal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionDetalle_Personal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionDetalle_Personal" message="tns:IWCFformulacionE_Lista_FormulacionDetalle_Personal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionDetalle_PersonalResponse" message="tns:IWCFformulacionE_Lista_FormulacionDetalle_Personal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionReporteProyecto_CentroCosto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionReporteProyecto_CentroCosto" message="tns:IWCFformulacionE_Lista_FormulacionReporteProyecto_CentroCosto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionReporteProyecto_CentroCostoResponse" message="tns:IWCFformulacionE_Lista_FormulacionReporteProyecto_CentroCosto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionDetalle_Proyecto_Otros">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionDetalle_Proyecto_Otros" message="tns:IWCFformulacionE_Lista_FormulacionDetalle_Proyecto_Otros_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionDetalle_Proyecto_OtrosResponse" message="tns:IWCFformulacionE_Lista_FormulacionDetalle_Proyecto_Otros_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Elimina_FormulacionDetalle_Proyecto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Elimina_FormulacionDetalle_Proyecto" message="tns:IWCFformulacionE_Elimina_FormulacionDetalle_Proyecto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Elimina_FormulacionDetalle_ProyectoResponse" message="tns:IWCFformulacionE_Elimina_FormulacionDetalle_Proyecto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Graba_FormulacionDetalle_Proyecto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_FormulacionDetalle_Proyecto" message="tns:IWCFformulacionE_Graba_FormulacionDetalle_Proyecto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_FormulacionDetalle_ProyectoResponse" message="tns:IWCFformulacionE_Graba_FormulacionDetalle_Proyecto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Modifica_FormulacionDetalle_Proyecto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Modifica_FormulacionDetalle_Proyecto" message="tns:IWCFformulacionE_Modifica_FormulacionDetalle_Proyecto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Modifica_FormulacionDetalle_ProyectoResponse" message="tns:IWCFformulacionE_Modifica_FormulacionDetalle_Proyecto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionDetalle_Proyecto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionDetalle_Proyecto" message="tns:IWCFformulacionE_Lista_FormulacionDetalle_Proyecto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionDetalle_ProyectoResponse" message="tns:IWCFformulacionE_Lista_FormulacionDetalle_Proyecto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Elimina_FormulacionDetalle_Ingreso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Elimina_FormulacionDetalle_Ingreso" message="tns:IWCFformulacionE_Elimina_FormulacionDetalle_Ingreso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Elimina_FormulacionDetalle_IngresoResponse" message="tns:IWCFformulacionE_Elimina_FormulacionDetalle_Ingreso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Graba_FormulacionDetalle_Ingreso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_FormulacionDetalle_Ingreso" message="tns:IWCFformulacionE_Graba_FormulacionDetalle_Ingreso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_FormulacionDetalle_IngresoResponse" message="tns:IWCFformulacionE_Graba_FormulacionDetalle_Ingreso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Modifica_FormulacionDetalle_Ingreso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Modifica_FormulacionDetalle_Ingreso" message="tns:IWCFformulacionE_Modifica_FormulacionDetalle_Ingreso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Modifica_FormulacionDetalle_IngresoResponse" message="tns:IWCFformulacionE_Modifica_FormulacionDetalle_Ingreso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionDetalle_Ingreso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionDetalle_Ingreso" message="tns:IWCFformulacionE_Lista_FormulacionDetalle_Ingreso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionDetalle_IngresoResponse" message="tns:IWCFformulacionE_Lista_FormulacionDetalle_Ingreso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Proyecto_FuenteFinanciamiento_Elegidos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_FuenteFinanciamiento_Elegidos" message="tns:IWCFformulacionE_Lista_Proyecto_FuenteFinanciamiento_Elegidos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_FuenteFinanciamiento_ElegidosResponse" message="tns:IWCFformulacionE_Lista_Proyecto_FuenteFinanciamiento_Elegidos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Proyecto_FuenteFinanciamiento_x_Elegir">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_FuenteFinanciamiento_x_Elegir" message="tns:IWCFformulacionE_Lista_Proyecto_FuenteFinanciamiento_x_Elegir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_FuenteFinanciamiento_x_ElegirResponse" message="tns:IWCFformulacionE_Lista_Proyecto_FuenteFinanciamiento_x_Elegir_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Graba_Proyecto_FuenteFinanciamiento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_Proyecto_FuenteFinanciamiento" message="tns:IWCFformulacionE_Graba_Proyecto_FuenteFinanciamiento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Graba_Proyecto_FuenteFinanciamientoResponse" message="tns:IWCFformulacionE_Graba_Proyecto_FuenteFinanciamiento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Elimina_Proyecto_FuenteFinanciamiento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Elimina_Proyecto_FuenteFinanciamiento" message="tns:IWCFformulacionE_Elimina_Proyecto_FuenteFinanciamiento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Elimina_Proyecto_FuenteFinanciamientoResponse" message="tns:IWCFformulacionE_Elimina_Proyecto_FuenteFinanciamiento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_PeriodoProceso_DataTable">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_PeriodoProceso_DataTable" message="tns:IWCFformulacionE_Combo_PeriodoProceso_DataTable_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_PeriodoProceso_DataTableResponse" message="tns:IWCFformulacionE_Combo_PeriodoProceso_DataTable_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Reporte_Detalle_Formulacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Reporte_Detalle_Formulacion" message="tns:IWCFformulacionE_Reporte_Detalle_Formulacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Reporte_Detalle_FormulacionResponse" message="tns:IWCFformulacionE_Reporte_Detalle_Formulacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Formulacion_HojaTrabajo_Gasto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Formulacion_HojaTrabajo_Gasto" message="tns:IWCFformulacionE_Lista_Formulacion_HojaTrabajo_Gasto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Formulacion_HojaTrabajo_GastoResponse" message="tns:IWCFformulacionE_Lista_Formulacion_HojaTrabajo_Gasto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Formulacion_HojaTrabajo_Ingreso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Formulacion_HojaTrabajo_Ingreso" message="tns:IWCFformulacionE_Lista_Formulacion_HojaTrabajo_Ingreso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Formulacion_HojaTrabajo_IngresoResponse" message="tns:IWCFformulacionE_Lista_Formulacion_HojaTrabajo_Ingreso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Formulacion_ResumenClasificador_Gasto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Formulacion_ResumenClasificador_Gasto" message="tns:IWCFformulacionE_Lista_Formulacion_ResumenClasificador_Gasto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Formulacion_ResumenClasificador_GastoResponse" message="tns:IWCFformulacionE_Lista_Formulacion_ResumenClasificador_Gasto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Formulacion_ResumenClasificador_Ingreso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Formulacion_ResumenClasificador_Ingreso" message="tns:IWCFformulacionE_Lista_Formulacion_ResumenClasificador_Ingreso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_Formulacion_ResumenClasificador_IngresoResponse" message="tns:IWCFformulacionE_Lista_Formulacion_ResumenClasificador_Ingreso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Formato_4P">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Formato_4P" message="tns:IWCFformulacionE_Formato_4P_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Formato_4PResponse" message="tns:IWCFformulacionE_Formato_4P_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionReporteProyecto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionReporteProyecto" message="tns:IWCFformulacionE_Lista_FormulacionReporteProyecto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionReporteProyectoResponse" message="tns:IWCFformulacionE_Lista_FormulacionReporteProyecto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionReporteContrato">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionReporteContrato" message="tns:IWCFformulacionE_Lista_FormulacionReporteContrato_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionReporteContratoResponse" message="tns:IWCFformulacionE_Lista_FormulacionReporteContrato_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Help_FormulacionTipoFormulacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Help_FormulacionTipoFormulacion" message="tns:IWCFformulacionE_Help_FormulacionTipoFormulacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Help_FormulacionTipoFormulacionResponse" message="tns:IWCFformulacionE_Help_FormulacionTipoFormulacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionReporteProyecto_Ceco">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionReporteProyecto_Ceco" message="tns:IWCFformulacionE_Lista_FormulacionReporteProyecto_Ceco_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionReporteProyecto_CecoResponse" message="tns:IWCFformulacionE_Lista_FormulacionReporteProyecto_Ceco_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionReporteProyecto_Saldo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionReporteProyecto_Saldo" message="tns:IWCFformulacionE_Lista_FormulacionReporteProyecto_Saldo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Lista_FormulacionReporteProyecto_SaldoResponse" message="tns:IWCFformulacionE_Lista_FormulacionReporteProyecto_Saldo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_TipoDocumento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_TipoDocumento" message="tns:IWCFformulacionE_Combo_TipoDocumento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_TipoDocumentoResponse" message="tns:IWCFformulacionE_Combo_TipoDocumento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Recupera_Usuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Recupera_Usuario" message="tns:IWCFformulacionE_Recupera_Usuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Recupera_UsuarioResponse" message="tns:IWCFformulacionE_Recupera_Usuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Recupera_Usuario_Codigo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Recupera_Usuario_Codigo" message="tns:IWCFformulacionE_Recupera_Usuario_Codigo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Recupera_Usuario_CodigoResponse" message="tns:IWCFformulacionE_Recupera_Usuario_Codigo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Combo_Usuario_Modulo_DataTable">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_Usuario_Modulo_DataTable" message="tns:IWCFformulacionE_Combo_Usuario_Modulo_DataTable_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Combo_Usuario_Modulo_DataTableResponse" message="tns:IWCFformulacionE_Combo_Usuario_Modulo_DataTable_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OpcionesMenu_Top">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/OpcionesMenu_Top" message="tns:IWCFformulacionE_OpcionesMenu_Top_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/OpcionesMenu_TopResponse" message="tns:IWCFformulacionE_OpcionesMenu_Top_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OpcionesMenu_Lateral">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/OpcionesMenu_Lateral" message="tns:IWCFformulacionE_OpcionesMenu_Lateral_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/OpcionesMenu_LateralResponse" message="tns:IWCFformulacionE_OpcionesMenu_Lateral_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Proyecto_Spring_Help">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_Spring_Help" message="tns:IWCFformulacionE_Ayuda_Proyecto_Spring_Help_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_Spring_HelpResponse" message="tns:IWCFformulacionE_Ayuda_Proyecto_Spring_Help_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IWCFformulacionE" type="tns:IWCFformulacionE">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Ayuda_Concepto">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_Concepto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_CentroCosto_Todos">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_CentroCosto_Todos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_CentroCosto">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_CentroCosto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Ceco_Clasificador_Elegidos">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Ceco_Clasificador_Elegidos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Ceco_Clasificador_x_Elegir">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Ceco_Clasificador_x_Elegir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Graba_CentroCosto_Clasificador">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Graba_CentroCosto_Clasificador" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Elimina_CentroCosto_Clasificador">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Elimina_CentroCosto_Clasificador" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Ceco_Proyecto_Elegidos">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Ceco_Proyecto_Elegidos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Ceco_Proyecto_x_Elegir">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Ceco_Proyecto_x_Elegir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Graba_CentroCosto_Proyecto">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Graba_CentroCosto_Proyecto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Elimina_CentroCosto_Proyecto">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Elimina_CentroCosto_Proyecto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Proyecto_IncorporaSaldoAñoAnterior_OS_Clasificador">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_IncorporaSaldoAñoAnterior_OS_Clasificador" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Proyecto_IncorporaSaldoAñoAnterior_OC_Clasificador">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_IncorporaSaldoAñoAnterior_OC_Clasificador" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Clasificador_Otro">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_Clasificador_Otro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Clasificador_Ingreso">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_Clasificador_Ingreso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Clasificador">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_Clasificador" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Clasificador_inversion">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_Clasificador_inversion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Clasificador_tarea">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_Clasificador_tarea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_ClaseIngreso">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_ClaseIngreso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_ClaseIngreso">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_ClaseIngreso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_TipoFormulacion">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_TipoFormulacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_Proyecto_FuenteFinanciamiento_Todos">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_Proyecto_FuenteFinanciamiento_Todos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Proyecto_Componente_Todos_Spring">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_Componente_Todos_Spring" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Proyecto_Componente_Spring">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_Componente_Spring" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_Proyecto_FuenteFinanciamiento">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_Proyecto_FuenteFinanciamiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_Tarea_FuenteFinanciamiento">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_Tarea_FuenteFinanciamiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Proyecto_Spring">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_Spring" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_PlanContable_Spring">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_PlanContable_Spring" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_FuenteFinanciamiento_Reporte">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_FuenteFinanciamiento_Reporte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_CentroCosto_Reporte">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_CentroCosto_Reporte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Proyecto_Reporte">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_Reporte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_FuenteFinanciamiento_Reporte">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_FuenteFinanciamiento_Reporte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_CentroCosto_Reporte">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_CentroCosto_Reporte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_Proyecto_Reporte">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_Proyecto_Reporte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Proyecto_FuenteFinanciamiento">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_FuenteFinanciamiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_ClaseGasto_Otros">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_ClaseGasto_Otros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Graba_Proyecto_OrdenTemporal">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Graba_Proyecto_OrdenTemporal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Elimina_Proyecto_OrdenTemporal">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Elimina_Proyecto_OrdenTemporal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Proyecto_CentroCosto">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_CentroCosto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_ClaseGasto">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_ClaseGasto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_ClaseGasto_Clasificador">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_ClaseGasto_Clasificador" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_ClaseGasto_Inversion">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_ClaseGasto_Inversion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_ClaseGasto_Tarea">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_ClaseGasto_Tarea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_ClaseGasto">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_ClaseGasto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_MetodoDistribucion">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_MetodoDistribucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_MetodoDistribucion">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_MetodoDistribucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Proyecto_SaldoAñoAnterior_Clasificador">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_SaldoAñoAnterior_Clasificador" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Proyecto_SaldoAñoAnterior">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_SaldoAñoAnterior" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Proyecto_IncorporaSaldoAñoAnterior_OS">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_IncorporaSaldoAñoAnterior_OS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Proyecto_IncorporaSaldoAñoAnterior_OC">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_IncorporaSaldoAñoAnterior_OC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Conformidad_Pago">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Conformidad_Pago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Formato_Conformidad">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Formato_Conformidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Empleado_Jefatura">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_Empleado_Jefatura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Recupera_Empleado_Codigo">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Recupera_Empleado_Codigo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Empleado">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_Empleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Arbol_Empleado">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Arbol_Empleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Graba_Empleado_CentroCosto">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Graba_Empleado_CentroCosto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Modifica_Empleado_CentroCosto">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Modifica_Empleado_CentroCosto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Recupera_Empleado_CentroCosto">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Recupera_Empleado_CentroCosto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_Empresa_DataTable">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_Empresa_DataTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_AñoProceso">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_AñoProceso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_Version">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_Version" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Recupera_FormulacionCabecera">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Recupera_FormulacionCabecera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Graba_FormulacionCabecera">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Graba_FormulacionCabecera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionCabecera">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_FormulacionCabecera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="elimina_mvto_Formulacion_Cabecera">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/elimina_mvto_Formulacion_Cabecera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Graba_FormulacionCabecera_DataSet">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Graba_FormulacionCabecera_DataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Modifica_mvto_Formulacion_Cabecera">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Modifica_mvto_Formulacion_Cabecera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Graba_mvto_Formulacion_Cabecera_Ceco">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Graba_mvto_Formulacion_Cabecera_Ceco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionCabecera_Ceco">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_FormulacionCabecera_Ceco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Recupera_FormulacionCabecera_CeCo">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Recupera_FormulacionCabecera_CeCo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Formulacion_Aprobacion_Ceco">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Formulacion_Aprobacion_Ceco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Version">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Version" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Graba_FormulacionDetalle">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Graba_FormulacionDetalle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Elimina_FormulacionDetalle_Personal">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Elimina_FormulacionDetalle_Personal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Graba_FormulacionDetalle_Personal">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Graba_FormulacionDetalle_Personal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Modifica_FormulacionDetalle_Personal">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Modifica_FormulacionDetalle_Personal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionDetalle_Personal">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_FormulacionDetalle_Personal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionReporteProyecto_CentroCosto">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_FormulacionReporteProyecto_CentroCosto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionDetalle_Proyecto_Otros">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_FormulacionDetalle_Proyecto_Otros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Elimina_FormulacionDetalle_Proyecto">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Elimina_FormulacionDetalle_Proyecto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Graba_FormulacionDetalle_Proyecto">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Graba_FormulacionDetalle_Proyecto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Modifica_FormulacionDetalle_Proyecto">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Modifica_FormulacionDetalle_Proyecto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionDetalle_Proyecto">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_FormulacionDetalle_Proyecto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Elimina_FormulacionDetalle_Ingreso">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Elimina_FormulacionDetalle_Ingreso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Graba_FormulacionDetalle_Ingreso">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Graba_FormulacionDetalle_Ingreso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Modifica_FormulacionDetalle_Ingreso">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Modifica_FormulacionDetalle_Ingreso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionDetalle_Ingreso">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_FormulacionDetalle_Ingreso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Proyecto_FuenteFinanciamiento_Elegidos">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_FuenteFinanciamiento_Elegidos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Proyecto_FuenteFinanciamiento_x_Elegir">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Proyecto_FuenteFinanciamiento_x_Elegir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Graba_Proyecto_FuenteFinanciamiento">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Graba_Proyecto_FuenteFinanciamiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Elimina_Proyecto_FuenteFinanciamiento">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Elimina_Proyecto_FuenteFinanciamiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_PeriodoProceso_DataTable">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_PeriodoProceso_DataTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reporte_Detalle_Formulacion">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Reporte_Detalle_Formulacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Formulacion_HojaTrabajo_Gasto">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Formulacion_HojaTrabajo_Gasto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Formulacion_HojaTrabajo_Ingreso">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Formulacion_HojaTrabajo_Ingreso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Formulacion_ResumenClasificador_Gasto">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Formulacion_ResumenClasificador_Gasto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_Formulacion_ResumenClasificador_Ingreso">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_Formulacion_ResumenClasificador_Ingreso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Formato_4P">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Formato_4P" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionReporteProyecto">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_FormulacionReporteProyecto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionReporteContrato">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_FormulacionReporteContrato" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Help_FormulacionTipoFormulacion">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Help_FormulacionTipoFormulacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionReporteProyecto_Ceco">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_FormulacionReporteProyecto_Ceco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lista_FormulacionReporteProyecto_Saldo">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Lista_FormulacionReporteProyecto_Saldo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_TipoDocumento">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_TipoDocumento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Recupera_Usuario">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Recupera_Usuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Recupera_Usuario_Codigo">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Recupera_Usuario_Codigo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Combo_Usuario_Modulo_DataTable">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Combo_Usuario_Modulo_DataTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpcionesMenu_Top">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/OpcionesMenu_Top" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpcionesMenu_Lateral">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/OpcionesMenu_Lateral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ayuda_Proyecto_Spring_Help">
+      <soap:operation soapAction="http://tempuri.org/IWCFformulacionE/Ayuda_Proyecto_Spring_Help" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WCFformulacionE">
+    <wsdl:port name="BasicHttpBinding_IWCFformulacionE" binding="tns:BasicHttpBinding_IWCFformulacionE">
+      <soap:address location="http://aplicacion.amsac.pe/FORMULACION/WCFformulacionE.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

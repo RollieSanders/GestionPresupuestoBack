@@ -1,0 +1,10 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<svg x="0px" y="0px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" id="Layer_1">
+  <g id="Report">
+    <path d="M27,4h-3v22H8V4H5C4.4,4,4,4.4,4,5v24c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V5C28,4.4,27.6,4,27,4z" fill="#FFB115" class="Yellow" />
+    <path d="M20,4V3c0-0.6-0.4-1-1-1h-6c-0.6,0-1,0.4-1,1v1h-2v4h3h6h3V4H20z" fill="#727272" class="Black" />
+    <g opacity="0.75" class="st1">
+      <path d="M10,20h12v2H10V20z M10,12h12v2H10V12z M10,16h12v2H10V16z" fill="#727272" opacity="0.75" class="Black" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d8f69bfc-23d2-45fd-8207-3798a8a49122" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://aplicacion.amsac.pe/FORMULACION/WCFformulacionE.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCFformulacionE5.xsd" MetadataType="Schema" ID="8c0a3861-d3c6-4429-b920-3088afa816b8" SourceId="1" SourceUrl="http://aplicacion.amsac.pe/FORMULACION/WCFformulacionE.svc?xsd=xsd3" />
+    <MetadataFile FileName="WCFformulacionE.disco" MetadataType="Disco" ID="e8217838-5725-4bd9-af29-04cc4a3dad7d" SourceId="1" SourceUrl="http://aplicacion.amsac.pe/FORMULACION/WCFformulacionE.svc?disco" />
+    <MetadataFile FileName="WCFformulacionE.wsdl" MetadataType="Wsdl" ID="178f7cab-a772-4ce6-93fa-373e9b2ba9cb" SourceId="1" SourceUrl="http://aplicacion.amsac.pe/FORMULACION/WCFformulacionE.svc?wsdl" />
+    <MetadataFile FileName="WCFformulacionE.xsd" MetadataType="Schema" ID="7aeb5fa6-0ecf-44c3-b4dc-759030ec10ea" SourceId="1" SourceUrl="http://aplicacion.amsac.pe/FORMULACION/WCFformulacionE.svc?xsd=xsd4" />
+    <MetadataFile FileName="WCFformulacionE51.xsd" MetadataType="Schema" ID="dbdbbf2f-7c1d-4e71-b5d8-5e7831f323a7" SourceId="1" SourceUrl="http://aplicacion.amsac.pe/FORMULACION/WCFformulacionE.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCFformulacionE52.xsd" MetadataType="Schema" ID="42b13af7-d1c1-4385-a28e-13d78857b0df" SourceId="1" SourceUrl="http://aplicacion.amsac.pe/FORMULACION/WCFformulacionE.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCFformulacionE53.xsd" MetadataType="Schema" ID="654780fb-8e72-4a6a-a82a-df301e241e68" SourceId="1" SourceUrl="http://aplicacion.amsac.pe/FORMULACION/WCFformulacionE.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

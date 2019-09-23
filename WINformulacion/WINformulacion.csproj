@@ -1,0 +1,1008 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6B17E8E-2B86-4AEC-83E8-A22631FED079}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WINformulacion</RootNamespace>
+    <AssemblyName>WINformulacion</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>D:\SafNet\Presupuesto\publicacion\App\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://aplicacion.amsac.pe/pFORMULACION/</InstallUrl>
+    <TargetCulture>es-PE</TargetCulture>
+    <ProductName>FORMULACIÓN</ProductName>
+    <PublisherName>AMSAC</PublisherName>
+    <SuiteName>FORMULACIÓN PRESUPUESTAL</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>47</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>IcoPresupuesto.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D87D151B1995ADEFB6205012170A7AE1B25F3B41</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WINformulacion_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.7.0.7, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.7.0.7\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.TemplateEngine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v18.2.UI, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 18.2\Components\Bin\Framework\DevExpress.Images.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.2.UI, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 18.2\Components\Bin\Framework\DevExpress.XtraReports.v18.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FN.FrameWork.Componentes">
+      <HintPath>..\..\dll\FN.FrameWork.Componentes.dll</HintPath>
+    </Reference>
+    <Reference Include="gnGroupControl">
+      <HintPath>..\..\dll\gnGroupControl.dll</HintPath>
+    </Reference>
+    <Reference Include="gnUserControl, Version=1.0.7129.40111, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\gnUserControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Excel.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Infragistics\Infragistics2.Excel.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Infragistics\Infragistics2.Shared.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.Misc.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Infragistics\Infragistics2.Win.Misc.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinDock.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Infragistics\Infragistics2.Win.UltraWinDock.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Infragistics\Infragistics2.Win.UltraWinEditors.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinExplorerBar.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Infragistics\Infragistics2.Win.UltraWinExplorerBar.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.ExcelExport.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Infragistics\Infragistics2.Win.UltraWinGrid.ExcelExport.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Infragistics\Infragistics2.Win.UltraWinGrid.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Infragistics\Infragistics2.Win.UltraWinStatusBar.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabbedMdi.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Infragistics\Infragistics2.Win.UltraWinTabbedMdi.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Infragistics\Infragistics2.Win.UltraWinTabControl.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Infragistics\Infragistics2.Win.UltraWinToolbars.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTree.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Infragistics\Infragistics2.Win.UltraWinTree.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Infragistics\Infragistics2.Win.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ayuda\Frm_AyudaGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda\Frm_AyudaGeneral.designer.cs">
+      <DependentUpon>Frm_AyudaGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\Frm_Clasificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda\Frm_Clasificacion.designer.cs">
+      <DependentUpon>Frm_Clasificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\Frm_Clasificacion_Ingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda\Frm_Clasificacion_Ingreso.designer.cs">
+      <DependentUpon>Frm_Clasificacion_Ingreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\Frm_Clasificacion_Otro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda\Frm_Clasificacion_Otro.designer.cs">
+      <DependentUpon>Frm_Clasificacion_Otro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\Frm_Clasificacion_Tarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda\Frm_Clasificacion_Tarea.designer.cs">
+      <DependentUpon>Frm_Clasificacion_Tarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\MyStuff.cs" />
+    <Compile Include="Connected Services\SRformulacion\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Formato\CrystalReport\Rpt_Conformidad.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Conformidad.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Formato\CrystalReport\Rpt_FormulacionProyecto_Resumen.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_FormulacionProyecto_Resumen.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Formato\CrystalReport\Rpt_FormulacionProyecto_Resumen_CentroCosto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_FormulacionProyecto_Resumen_CentroCosto.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Formato\CrystalReport\Rpt_FormulacionProyecto_Resumen_Proyecto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_FormulacionProyecto_Resumen_Proyecto.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Formato\CrystalReport\Rpt_FormulacionProyecto_Resumen_Proyecto_Componente.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_FormulacionProyecto_Resumen_Proyecto_Componente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Formato\DataSet\Ds_Conformidad.cs">
+      <DependentUpon>Ds_Conformidad.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formato\DataSet\Ds_Conformidad.designer.cs">
+      <DependentUpon>Ds_Conformidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formato\DataSet\Ds_Conformidad1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Conformidad.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formato\DataSet\Ds_FormulacionProyecto_Resumen.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_FormulacionProyecto_Resumen.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formato\Formato\Frt_Conformidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formato\Formato\Frt_Conformidad.designer.cs">
+      <DependentUpon>Frt_Conformidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Frm_Login.designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaDistribucion_Meses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaDistribucion_Meses.Designer.cs">
+      <DependentUpon>Frm_ActualizaDistribucion_Meses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Ingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Ingreso.designer.cs">
+      <DependentUpon>Frm_ActualizaFormulacion_Ingreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Ingreso_Filtro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Ingreso_Filtro.designer.cs">
+      <DependentUpon>Frm_ActualizaFormulacion_Ingreso_Filtro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Otros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Otros.designer.cs">
+      <DependentUpon>Frm_ActualizaFormulacion_Otros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Otros_Filtro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Otros_Filtro.designer.cs">
+      <DependentUpon>Frm_ActualizaFormulacion_Otros_Filtro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Personal.designer.cs">
+      <DependentUpon>Frm_ActualizaFormulacion_Personal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Personal_Filtro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Personal_Filtro.designer.cs">
+      <DependentUpon>Frm_ActualizaFormulacion_Personal_Filtro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Proyecto_Inversion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Proyecto_Inversion.Designer.cs">
+      <DependentUpon>Frm_ActualizaFormulacion_Proyecto_Inversion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Proyecto_Inversion_AñoAnterior.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Proyecto_Inversion_AñoAnterior.Designer.cs">
+      <DependentUpon>Frm_ActualizaFormulacion_Proyecto_Inversion_AñoAnterior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Proyecto_Inversion_AñoAnterior_Clasificdor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Proyecto_Inversion_AñoAnterior_Clasificdor.designer.cs">
+      <DependentUpon>Frm_ActualizaFormulacion_Proyecto_Inversion_AñoAnterior_Clasificdor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Proyecto_Inversion_AñoAnterior_Conformidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Proyecto_Inversion_AñoAnterior_Conformidad.Designer.cs">
+      <DependentUpon>Frm_ActualizaFormulacion_Proyecto_Inversion_AñoAnterior_Conformidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Proyecto_Inversion_FF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Proyecto_Inversion_FF.designer.cs">
+      <DependentUpon>Frm_ActualizaFormulacion_Proyecto_Inversion_FF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Proyecto_Inversion_Filtro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Proyecto_Inversion_Filtro.Designer.cs">
+      <DependentUpon>Frm_ActualizaFormulacion_Proyecto_Inversion_Filtro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaDistribucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaDistribucion.Designer.cs">
+      <DependentUpon>Frm_ActualizaDistribucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Tarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Tarea.designer.cs">
+      <DependentUpon>Frm_ActualizaFormulacion_Tarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Tarea_Filtro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Frm_ActualizaFormulacion_Tarea_Filtro.designer.cs">
+      <DependentUpon>Frm_ActualizaFormulacion_Tarea_Filtro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Frm_DistribucionMeses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Frm_DistribucionMeses.Designer.cs">
+      <DependentUpon>Frm_DistribucionMeses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\Frm_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporte\Frm_Formato_4P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\Frm_Formato_4P.Designer.cs">
+      <DependentUpon>Frm_Formato_4P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Frm_Formulacion_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\Frm_Formulacion_Detalle.designer.cs">
+      <DependentUpon>Frm_Formulacion_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Frm_Reporte_Dev_Formulacion_Proyecto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte\Frm_Reporte_Dev_Formulacion_Proyecto.Designer.cs">
+      <DependentUpon>Frm_Reporte_Dev_Formulacion_Proyecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Frm_Reporte_Formulacion_Proyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\Frm_Reporte_Formulacion_Proyecto.Designer.cs">
+      <DependentUpon>Frm_Reporte_Formulacion_Proyecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Frm_Reporte_Formulacion_Proyecto_Ceco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\Frm_Reporte_Formulacion_Proyecto_Ceco.Designer.cs">
+      <DependentUpon>Frm_Reporte_Formulacion_Proyecto_Ceco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Frm_Reporte_Formulacion_Proyecto_CentroGestor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\Frm_Reporte_Formulacion_Proyecto_CentroGestor.designer.cs">
+      <DependentUpon>Frm_Reporte_Formulacion_Proyecto_CentroGestor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Frm_Reporte_Formulacion_Proyecto_Saldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\Frm_Reporte_Formulacion_Proyecto_Saldo.Designer.cs">
+      <DependentUpon>Frm_Reporte_Formulacion_Proyecto_Saldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Frm_Reporte_Formulacion_Saldo_Proyecto_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\Frm_Reporte_Formulacion_Saldo_Proyecto_Detalle.Designer.cs">
+      <DependentUpon>Frm_Reporte_Formulacion_Saldo_Proyecto_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Frm_Reporte_Hoja_Trabajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\Frm_Reporte_Hoja_Trabajo.designer.cs">
+      <DependentUpon>Frm_Reporte_Hoja_Trabajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Frm_Reporte_Resumen_Clasificador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\Frm_Reporte_Resumen_Clasificador.designer.cs">
+      <DependentUpon>Frm_Reporte_Resumen_Clasificador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\Framework.cs" />
+    <Compile Include="TablasAuxiliares\Frm_Actualiza_Version.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablasAuxiliares\Frm_Actualiza_Version.Designer.cs">
+      <DependentUpon>Frm_Actualiza_Version.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablasAuxiliares\Frm_Aprobar_Formulacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablasAuxiliares\Frm_Aprobar_Formulacion.designer.cs">
+      <DependentUpon>Frm_Aprobar_Formulacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablasAuxiliares\Frm_Asignar_CeCo_Clasificador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablasAuxiliares\Frm_Asignar_CeCo_Clasificador.Designer.cs">
+      <DependentUpon>Frm_Asignar_CeCo_Clasificador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablasAuxiliares\Frm_Asignar_Ceco_Proyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablasAuxiliares\Frm_Asignar_Ceco_Proyecto.Designer.cs">
+      <DependentUpon>Frm_Asignar_Ceco_Proyecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablasAuxiliares\Frm_Asignar_FF_Proyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablasAuxiliares\Frm_Asignar_FF_Proyecto.Designer.cs">
+      <DependentUpon>Frm_Asignar_FF_Proyecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablasAuxiliares\Frm_Cierra_Version.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablasAuxiliares\Frm_Cierra_Version.Designer.cs">
+      <DependentUpon>Frm_Cierra_Version.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablasAuxiliares\Frm_Empleado_CentroCosto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablasAuxiliares\Frm_Empleado_CentroCosto.Designer.cs">
+      <DependentUpon>Frm_Empleado_CentroCosto.cs</DependentUpon>
+    </Compile>
+    <None Include="Connected Services\SRformulacion\WCFformulacionE.disco" />
+    <Content Include="Excel\Formulacion_Ingreso.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Excel\Formato4P.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Connected Services\SRformulacion\WCFformulacionE.wsdl" />
+    <None Include="Connected Services\SRformulacion\WCFformulacionE.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SRformulacion\WCFformulacionE5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SRformulacion\WCFformulacionE51.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SRformulacion\WCFformulacionE52.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SRformulacion\WCFformulacionE53.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Excel\Formulacion_Personal.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Excel\FormulacionDetalle.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Resources\Tarea32.png" />
+    <None Include="Resources\Saldo32.png" />
+    <None Include="Resources\ReporteProyecto32.png" />
+    <None Include="Resources\ReporteCeco32.png" />
+    <None Include="Resources\Proyecto32.png" />
+    <None Include="Resources\Nuevo32.png" />
+    <None Include="Resources\ListaPendiente32.png" />
+    <None Include="Resources\Lista32.png" />
+    <None Include="Resources\Inversion32.png" />
+    <None Include="Resources\Interno32.png" />
+    <None Include="Resources\Imprimir32.png" />
+    <None Include="Resources\Guardar32.png" />
+    <None Include="Resources\Formulacion32.png" />
+    <None Include="Resources\Financiamiento32.png" />
+    <None Include="Resources\Empleado32.png" />
+    <None Include="Resources\Eliminar32.png" />
+    <None Include="Resources\Distribuir32.png" />
+    <None Include="Resources\Detalle32.png" />
+    <None Include="Resources\Cerrar32.png" />
+    <None Include="Resources\CecoProyecto32.png" />
+    <None Include="Resources\Ceco32.png" />
+    <None Include="Resources\Calcular32.png" />
+    <None Include="Resources\Buscar32.png" />
+    <None Include="Resources\ActualizarVersion32.png" />
+    <None Include="Resources\Lista_16x16.png" />
+    <None Include="Resources\Usuario_16x16.png" />
+    <None Include="Resources\Undo_16x16.png" />
+    <None Include="Resources\Searche_16x16.png" />
+    <None Include="Resources\Paquete_16x16.png" />
+    <None Include="Resources\Nuevo_16x16.png" />
+    <None Include="Resources\Guardar_16x16.png" />
+    <None Include="Resources\Exportar_16x16.png" />
+    <None Include="Resources\Eliminar_16x16.png" />
+    <None Include="Resources\Eliminar.png" />
+    <None Include="Resources\Clave_16x16.png" />
+    <None Include="Resources\Casa.png" />
+    <None Include="Resources\Cancelar_16x16.png" />
+    <None Include="Resources\Calendario_16x16.png" />
+    <None Include="Resources\Aceptar_16x16.png" />
+    <None Include="Resources\LogoAM.png" />
+    <None Include="Resources\LoginAmsac.png" />
+    <EmbeddedResource Include="Ayuda\Frm_AyudaGeneral.resx">
+      <DependentUpon>Frm_AyudaGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda\Frm_Clasificacion.resx">
+      <DependentUpon>Frm_Clasificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda\Frm_Clasificacion_Ingreso.resx">
+      <DependentUpon>Frm_Clasificacion_Ingreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda\Frm_Clasificacion_Otro.resx">
+      <DependentUpon>Frm_Clasificacion_Otro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda\Frm_Clasificacion_Tarea.resx">
+      <DependentUpon>Frm_Clasificacion_Tarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formato\CrystalReport\Rpt_Conformidad.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Conformidad.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formato\CrystalReport\Rpt_FormulacionProyecto_Resumen.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_FormulacionProyecto_Resumen.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formato\CrystalReport\Rpt_FormulacionProyecto_Resumen_CentroCosto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_FormulacionProyecto_Resumen_CentroCosto.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formato\CrystalReport\Rpt_FormulacionProyecto_Resumen_Proyecto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_FormulacionProyecto_Resumen_Proyecto.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formato\CrystalReport\Rpt_FormulacionProyecto_Resumen_Proyecto_Componente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_FormulacionProyecto_Resumen_Proyecto_Componente.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formato\Formato\Frt_Conformidad.resx">
+      <DependentUpon>Frt_Conformidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Frm_ActualizaDistribucion_Meses.resx">
+      <DependentUpon>Frm_ActualizaDistribucion_Meses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Frm_ActualizaFormulacion_Ingreso.resx">
+      <DependentUpon>Frm_ActualizaFormulacion_Ingreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Frm_ActualizaFormulacion_Ingreso_Filtro.resx">
+      <DependentUpon>Frm_ActualizaFormulacion_Ingreso_Filtro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Frm_ActualizaFormulacion_Otros.resx">
+      <DependentUpon>Frm_ActualizaFormulacion_Otros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Frm_ActualizaFormulacion_Otros_Filtro.resx">
+      <DependentUpon>Frm_ActualizaFormulacion_Otros_Filtro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Frm_ActualizaFormulacion_Personal.resx">
+      <DependentUpon>Frm_ActualizaFormulacion_Personal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Frm_ActualizaFormulacion_Personal_Filtro.resx">
+      <DependentUpon>Frm_ActualizaFormulacion_Personal_Filtro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Frm_ActualizaFormulacion_Proyecto_Inversion.resx">
+      <DependentUpon>Frm_ActualizaFormulacion_Proyecto_Inversion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Frm_ActualizaFormulacion_Proyecto_Inversion_AñoAnterior.resx">
+      <DependentUpon>Frm_ActualizaFormulacion_Proyecto_Inversion_AñoAnterior.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Frm_ActualizaFormulacion_Proyecto_Inversion_AñoAnterior_Clasificdor.resx">
+      <DependentUpon>Frm_ActualizaFormulacion_Proyecto_Inversion_AñoAnterior_Clasificdor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Frm_ActualizaFormulacion_Proyecto_Inversion_AñoAnterior_Conformidad.resx">
+      <DependentUpon>Frm_ActualizaFormulacion_Proyecto_Inversion_AñoAnterior_Conformidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Frm_ActualizaFormulacion_Proyecto_Inversion_FF.resx">
+      <DependentUpon>Frm_ActualizaFormulacion_Proyecto_Inversion_FF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Frm_ActualizaFormulacion_Proyecto_Inversion_Filtro.resx">
+      <DependentUpon>Frm_ActualizaFormulacion_Proyecto_Inversion_Filtro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Frm_ActualizaDistribucion.resx">
+      <DependentUpon>Frm_ActualizaDistribucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Frm_ActualizaFormulacion_Tarea.resx">
+      <DependentUpon>Frm_ActualizaFormulacion_Tarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Frm_ActualizaFormulacion_Tarea_Filtro.resx">
+      <DependentUpon>Frm_ActualizaFormulacion_Tarea_Filtro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Frm_DistribucionMeses.resx">
+      <DependentUpon>Frm_DistribucionMeses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\Frm_Principal.resx">
+      <DependentUpon>Frm_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reporte\Frm_Formato_4P.resx">
+      <DependentUpon>Frm_Formato_4P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\Frm_Formulacion_Detalle.resx">
+      <DependentUpon>Frm_Formulacion_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\Frm_Reporte_Dev_Formulacion_Proyecto.resx">
+      <DependentUpon>Frm_Reporte_Dev_Formulacion_Proyecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\Frm_Reporte_Formulacion_Proyecto.resx">
+      <DependentUpon>Frm_Reporte_Formulacion_Proyecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\Frm_Reporte_Formulacion_Proyecto_Ceco.resx">
+      <DependentUpon>Frm_Reporte_Formulacion_Proyecto_Ceco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\Frm_Reporte_Formulacion_Proyecto_CentroGestor.resx">
+      <DependentUpon>Frm_Reporte_Formulacion_Proyecto_CentroGestor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\Frm_Reporte_Formulacion_Proyecto_Saldo.resx">
+      <DependentUpon>Frm_Reporte_Formulacion_Proyecto_Saldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\Frm_Reporte_Formulacion_Saldo_Proyecto_Detalle.resx">
+      <DependentUpon>Frm_Reporte_Formulacion_Saldo_Proyecto_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\Frm_Reporte_Hoja_Trabajo.resx">
+      <DependentUpon>Frm_Reporte_Hoja_Trabajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\Frm_Reporte_Resumen_Clasificador.resx">
+      <DependentUpon>Frm_Reporte_Resumen_Clasificador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablasAuxiliares\Frm_Actualiza_Version.resx">
+      <DependentUpon>Frm_Actualiza_Version.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablasAuxiliares\Frm_Aprobar_Formulacion.resx">
+      <DependentUpon>Frm_Aprobar_Formulacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablasAuxiliares\Frm_Asignar_CeCo_Clasificador.resx">
+      <DependentUpon>Frm_Asignar_CeCo_Clasificador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablasAuxiliares\Frm_Asignar_Ceco_Proyecto.resx">
+      <DependentUpon>Frm_Asignar_Ceco_Proyecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablasAuxiliares\Frm_Asignar_FF_Proyecto.resx">
+      <DependentUpon>Frm_Asignar_FF_Proyecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablasAuxiliares\Frm_Cierra_Version.resx">
+      <DependentUpon>Frm_Cierra_Version.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablasAuxiliares\Frm_Empleado_CentroCosto.resx">
+      <DependentUpon>Frm_Empleado_CentroCosto.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Excel\Formulacion_Otros.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Excel\Formulacion_Proyecto_Inversion.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Excel\Formulacion_Tarea.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Formato\DataSet\Ds_Conformidad.xsc">
+      <DependentUpon>Ds_Conformidad.xsd</DependentUpon>
+    </None>
+    <None Include="Formato\DataSet\Ds_Conformidad.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Conformidad1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Formato\DataSet\Ds_Conformidad.xss">
+      <DependentUpon>Ds_Conformidad.xsd</DependentUpon>
+    </None>
+    <None Include="Formato\DataSet\Ds_FormulacionProyecto_Resumen.xsc">
+      <DependentUpon>Ds_FormulacionProyecto_Resumen.xsd</DependentUpon>
+    </None>
+    <None Include="Formato\DataSet\Ds_FormulacionProyecto_Resumen.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_FormulacionProyecto_Resumen.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formato\DataSet\Ds_FormulacionProyecto_Resumen.xss">
+      <DependentUpon>Ds_FormulacionProyecto_Resumen.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\Model.Empleado.datasource" />
+    <None Include="Properties\DataSources\Model.Formulacion_Cabecera.datasource" />
+    <None Include="Properties\DataSources\Model.Formulacion_Cabecera_Ceco.datasource" />
+    <None Include="Properties\DataSources\Model.Usuario.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WINformulacion_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SAP.CrystalReports14.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>SAP Crystal Reports Runtime Engine for .NET Framework</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viewmergeddata.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{da044849-bb18-4108-816b-ecac7834830b}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Service\Service.csproj">
+      <Project>{db42bcaf-58bc-4e58-9408-0f6e0c1569f0}</Project>
+      <Name>Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\024-busqueda-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\024-busqueda-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\040-error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\041-interfaz-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acroread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anulado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aperturar_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aperturar_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_gray_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLIP-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLOSE.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corona.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\del_Documento.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\del_Documento1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elorload.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\esfera_ambar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\esfera_roja.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\esfera_verde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filtrodatos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\genesis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grabar_salir.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grabaRegistro.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llave-01.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llaves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mod_Documento.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mod_Documento1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pasos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\SRformulacion\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SRformulacion\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SRformulacion\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SRformulacion\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_report.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enablesearch.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icalendarexport.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveas.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_invoice.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="FlashControlV71">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ShockwaveFlashObjects">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IcoPresupuesto.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <FileAssociation Include=".ico">
+      <Visible>False</Visible>
+      <Description>IcoPresupuesto</Description>
+      <Progid>ICO</Progid>
+      <DefaultIcon>IcoPresupuesto.ico</DefaultIcon>
+    </FileAssociation>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
